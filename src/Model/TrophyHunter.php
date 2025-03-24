@@ -1,7 +1,7 @@
 <?php
 
 // Dependencias
-require_once '../DAO/DataBase.php';
+require_once '../DAO/Service.php';
 
 class TrophyHunter {
 
@@ -9,7 +9,7 @@ class TrophyHunter {
 
   public function __construct() {
 
-    $this->conn = new DataBase()->conn;
+    $this->conn = new Service();
 
   }
 
